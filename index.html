@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Aaar by OriPekelman</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Aaar</h1>
+        <h2>Adoption Agency for Abandoned Repos</h2>
+        <a href="https://github.com/OriPekelman/aaar" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="aaar" class="anchor" href="#aaar"><span class="octicon octicon-link"></span></a>Aaar!</h1>
+
+<h2>
+<a name="adoption-agency-for-aaared-repos" class="anchor" href="#adoption-agency-for-aaared-repos"><span class="octicon octicon-link"></span></a>Adoption Agency for Aaared Repos</h2>
+
+<p>This is basically around creating a "foundation style" governenship model for smaller projects, but without the hassle and the politics. Put it in a box, as a service, lightweight, fun, only around decision making and transparency, not the discussions, they will happen somewhere else. Going AAAR is taking a pledge either to maintain or to do whatever is possible to help others maintain a project.</p>
+
+<p>This is both for the casual OS contributor, that released a thing, but finds it hard to get into the move. The company the sponsors a project, then changes priorities. Or for Yehuda Katz and Steve Klabnik that simple have too much on their plate. Transferring maintainership can simply be the proof of the susccess of a project. It can now live on.  So this is about adoption, but also about parent counselling. </p>
+
+<p>But most importantly this is about the end-user, the developer, htat wants to know how well a project is maintained, this takes out some of the steam from the last serious FUD elements againts OS. Just tell me. I might still use it if it is not maintained. I might even choose to maintain it myself. But tell me.</p>
+
+<h2>
+<a name="thoughts" class="anchor" href="#thoughts"><span class="octicon octicon-link"></span></a>Thoughts</h2>
+
+<ul>
+<li>Take the shame/pressure out - it is always a good thing to contribute, but we are not angels, our time is not infinite</li>
+<li>We start with github support only - but you should be able to abandon towards somewhere else
+
+<ul>
+<li>We will need to talk to the github guys about API usage limits. If ever this takes off we might easily explode the quota.</li>
+</ul>
+</li>
+<li>Remember, some (important) repos on github are just mirrors</li>
+<li>Some people have just so much Karma, that if you decide to go AAAR you also accept they can take over your project, for a time, forever. You can always "opt-out" by just removing the badge. Again this is about a strong signal to the larger community.</li>
+<li>Forks (real ones) and Merges (real ones) are an important thing. It is time we had again clear semantics on this : This is a fork, that is going to be maintained as such. Might get merged back, or not.</li>
+<li>Make this a bit Tamagochi</li>
+</ul><h2>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting started</h2>
+
+<p>Basically nothing to see yet. But you can:</p>
+
+<p>First install MongoDB</p>
+
+<p><code>git clone git@github.com:OriPekelman/aaar.git</code>
+<code>cd aaar</code>
+<code>bundle install</code>
+<code>cp config/devise.example.rb config/devise.rb</code>
+Create a github application, edit config/devise.rb  and put in your credentials
+<code>rails s</code> and visit http://localhost:3000</p>
+
+<h2>
+<a name="specs--todo" class="anchor" href="#specs--todo"><span class="octicon octicon-link"></span></a>Specs / Todo</h2>
+
+<ol>
+<li>Prioritize (Now, what is the MVP for this thing? what are the minimal metrics + minimal action items + Do I start with a Rails thing and refactor to async workers, or from the get go decouple everything, it will make it easier to conribute custom metrics etc..)</li>
+<li>Operationnal model / Licensing for AAAR itself (so on MVP we need at least a self referncing badge !) - I would probably want this GPL without copyright assignement</li>
+<li>Privacy, privacy, privacy</li>
+<li>Security, security, security</li>
+<li>UX, UX, UX</li>
+<li>Design</li>
+</ol><h2>
+<a name="web-site" class="anchor" href="#web-site"><span class="octicon octicon-link"></span></a>Web site:</h2>
+
+<ol>
+<li>Design a logo - Baby pirates on poneys or something like that</li>
+<li>oAuth connect to github account</li>
+<li>Configure notifications
+
+<ol>
+<li>frequency (don't be spammy, but give a nice weekly/monthly recap)</li>
+<li>reward type (random, cat, squirrel, poney, Babies etc...). </li>
+</ol>
+</li>
+<li>See charts / metrics:
+
+<ol>
+<li>Redzone - project is used, maintainrship down. Propose actions:</li>
+<li>Explain low scores</li>
+<li>Propose action items
+
+<ol>
+<li>Close issues / respond / accept or refuse pull request / write a TODO, add a LICENSE</li>
+<li>Offer to abandon - and seek new maintainer</li>
+<li>With confirmation / Without (vote of co-maintainers etc.. )</li>
+<li>Explain that passing maintainership is more then click. Is there a google group? A website? You need to give everything. (we need to give kudos for those that abandon and who have found a new maintainer)</li>
+<li>Seek co-maintainer</li>
+<li>Aaar clear and simple</li>
+<li>Promise to get better - We should follow up on this, like for probation for new maintainers</li>
+<li>Cry for help (email notify / twitter ping people that have already contributed? you need help)</li>
+</ol>
+</li>
+<li>Greenzone - poneys!</li>
+<li>The children have grown up, time for them to move on.</li>
+<li>Gray zone (project is widely used, not a lot of issues humm drumm)</li>
+</ol>
+</li>
+<li>We can also tweet from an official account and give kudos to people doing a great job. This should probably also be on the non-logged in home page.</li>
+<li>Be able to express on a new project how much of a long-term thing you think this is going to be.</li>
+</ol><h2>
+<a name="workers" class="anchor" href="#workers"><span class="octicon octicon-link"></span></a>Workers</h2>
+
+<ol>
+<li>
+<p>recuperate all user repos</p>
+
+<ol>
+<li>sort to origins and forks</li>
+<li>mark forks with push rights to origin</li>
+<li>mark forks with accepted pull requests</li>
+</ol>
+</li>
+<li>
+<p>Extract simple metrics</p>
+
+<ol>
+<li>stars, followers, commits, issues</li>
+</ol>
+</li>
+<li>
+<p>Extract extra metrics</p>
+
+<ol>
+<li>Wiki 1/0</li>
+<li>Wiki Activity (number of commits? Delta +/- lines)</li>
+<li>Get activity from NPM, from Rubygems ...</li>
+<li>Get scores from travis, codeclimate, CVEs?</li>
+<li>New mainainters are on probation - specific badges, honours, maintainership can default back to original.</li>
+<li>Is there a LICENSE file</li>
+<li>Is there a CONTRIBUTE file (does it talk about copyright assignement?)</li>
+<li>Is there a ROADMAP /TODO file?</li>
+<li>Is there a CHANGELOG</li>
+<li>Is it using Semver?</li>
+</ol>
+</li>
+</ol><h2>
+<a name="visitor-workers" class="anchor" href="#visitor-workers"><span class="octicon octicon-link"></span></a>Visitor Workers</h2>
+
+<ol>
+<li>Create time series for every data point : data_point:[{date=&gt;date, value=&gt;value}]</li>
+<li>Create score for different dimensions : Activity / Maintainership</li>
+<li>Create notification</li>
+</ol><h2>
+<a name="badge" class="anchor" href="#badge"><span class="octicon octicon-link"></span></a>Badge</h2>
+
+<p>Two types of badges, codeclimate/travis style + badgy badges (coderwall)</p>
+
+<ol>
+<li>Generate images - activity level / maintainership level - We can have multiple badges, generate a single image</li>
+<li>Generate link(s) 
+
+<ol>
+<li>to AbandonBadge (This project is no longer maintained, and is seeking a new maintainer / This repo is maintained by a god expect reaction times in the ms domain for pull requests.... etc / This repo needs more co-maintainers, there so much work... )</li>
+<li>to "maintained" repo (the author of the project has transferred maintainership to..  click here for maitained fork)</li>
+</ol>
+</li>
+</ol><h2>
+<a name="api" class="anchor" href="#api"><span class="octicon octicon-link"></span></a>API</h2>
+
+<p>Basically all of the data is going to come from somewhere else; It would be cool to keep hypermedia links to the original authority of the data.</p>
+
+<p>We need only expose the specifics here: Decisions users made on maintainership.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/OriPekelman/aaar/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/OriPekelman/aaar/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/OriPekelman/aaar"></a> is maintained by <a href="https://github.com/OriPekelman">OriPekelman</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-44232860-1 ");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
