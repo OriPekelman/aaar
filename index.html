@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Aaar : Adoption Agency for Abandoned Repos" />
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Aaar by OriPekelman</title>
+    <title>Aaar</title>
   </head>
 
   <body>
-    <header>
-      <div class="inner">
-        <h1>Aaar</h1>
-        <h2>Adoption Agency for Abandoned Repos</h2>
-        <a href="https://github.com/OriPekelman/aaar" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/OriPekelman/aaar">View on GitHub</a>
+
+          <h1 id="project_title">Aaar</h1>
+          <h2 id="project_tagline">Adoption Agency for Abandoned Repos</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/OriPekelman/aaar/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/OriPekelman/aaar/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
 <a name="aaar" class="anchor" href="#aaar"><span class="octicon octicon-link"></span></a>Aaar!</h1>
 
 <h2>
 <a name="adoption-agency-for-abandoned-repos" class="anchor" href="#adoption-agency-for-abandoned-repos"><span class="octicon octicon-link"></span></a>Adoption Agency for Abandoned Repos</h2>
+
+<p>TL;DR</p>
+
+<ul>
+<li>Put a badge on a github page saying if the repo is maintained or not. </li>
+<li>If there is a maintained fork and the original fork is no longer active give a link to the maintained fork.</li>
+<li>Help maintainers be better ones, with less pressure, allow maintainers to suggest they want someone to take  over.</li>
+<li>Poneys, Squirrels, Pirates, Babies and very cute cats.</li>
+</ul><h2>
+<a name="rational" class="anchor" href="#rational"><span class="octicon octicon-link"></span></a>Rational</h2>
 
 <p>This is basically around creating a "foundation style" governenship model for smaller projects, but without the hassle and the politics. Put it in a box, as a service, lightweight, fun, only around decision making and transparency, not the discussions, they will happen somewhere else. Going AAAR is taking a pledge either to maintain or to do whatever is possible to help others maintain a project.</p>
 
@@ -62,12 +75,19 @@
 
 <p>First install MongoDB</p>
 
-<p><code>git clone</code>
-<code>cd aaar</code>
-<code>bundle install</code>
-<code>cp config/devise.example.rb config/devise.rb</code>
-Create a github application, edit config/devise.rb  and put in your credentials
-<code>rails s</code> and visit http://localhost:3000</p>
+<p><code>git clone git@github.com:OriPekelman/aaar.git</code></p>
+
+<p><code>cd aaar</code></p>
+
+<p><code>bundle install</code></p>
+
+<p><code>cp config/devise.example.rb config/devise.rb</code></p>
+
+<p>Create a github application, edit config/devise.rb  and put in your credentials</p>
+
+<p><code>rails s</code> </p>
+
+<p>and visit http://localhost:3000</p>
 
 <h2>
 <a name="specs--todo" class="anchor" href="#specs--todo"><span class="octicon octicon-link"></span></a>Specs / Todo</h2>
@@ -179,29 +199,23 @@ Create a github application, edit config/devise.rb  and put in your credentials
 
 <p>Basically all of the data is going to come from somewhere else; It would be cool to keep hypermedia links to the original authority of the data.</p>
 
-<p>We need only expose the specifics here: Decisions users made on maintainership.
-    </p><div></div>
-    
-        </section>
+<p>We need only expose the specifics here: Decisions users made on maintainership.</p>
 
-        <aside id="sidebar">
-          <a href="https://github.com/OriPekelman/aaar/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/OriPekelman/aaar/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+<div></div>
 
-          <p class="repo-owner"><a href="https://github.com/OriPekelman/aaar"></a> is maintained by <a href="https://github.com/OriPekelman">OriPekelman</a>.</p>
-
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+<p></p>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a><a href="http://disqus.com">comments powered by Disqus</a>
+      </section>
     </div>
 
-            <script type="text/javascript">
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Aaar maintained by <a href="https://github.com/OriPekelman">OriPekelman</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -211,6 +225,7 @@ Create a github application, edit config/devise.rb  and put in your credentials
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
+
 
   </body>
 </html>
