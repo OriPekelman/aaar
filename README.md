@@ -1,5 +1,5 @@
 #Aaar!
-## Adoption Agency for Aaared Repos
+## Adoption Agency for Abandoned Repos
 
 This is basically around creating a "foundation style" governenship model for smaller projects, but without the hassle and the politics. Put it in a box, as a service, lightweight, fun, only around decision making and transparency, not the discussions, they will happen somewhere else. Going AAAR is taking a pledge either to maintain or to do whatever is possible to help others maintain a project.
 
