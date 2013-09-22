@@ -1,0 +1,8 @@
+<% repositories.each do |repo| %>
+  <tr>
+    <td><%= repo.name %></td>
+    <td><%= repo.language %></td>
+    <td><%= repo.description %></td>
+    <td><%= repo.forks_count %></td>
+  </tr>
+<% end %>

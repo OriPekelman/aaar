@@ -1,0 +1,41 @@
+<h1>Listing activity_scores</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Repo</th>
+      <th>Year</th>
+      <th>Week</th>
+      <th>Pulls</th>
+      <th>Issues close</th>
+      <th>Issues comments</th>
+      <th>Commits</th>
+      <th>Commits change</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @activity_scores.each do |activity_score| %>
+      <tr>
+        <td><%= activity_score.repo_id %></td>
+        <td><%= activity_score.year %></td>
+        <td><%= activity_score.week %></td>
+        <td><%= activity_score.pulls %></td>
+        <td><%= activity_score.issues_close %></td>
+        <td><%= activity_score.issues_comments %></td>
+        <td><%= activity_score.commits %></td>
+        <td><%= activity_score.commits_change %></td>
+        <td><%= link_to 'Show', activity_score %></td>
+        <td><%= link_to 'Edit', edit_activity_score_path(activity_score) %></td>
+        <td><%= link_to 'Destroy', activity_score, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Activity score', new_activity_score_path %>

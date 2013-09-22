@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @repo.name %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @repo.user_id %>
+</p>
+
+<p>
+  <strong>Forks:</strong>
+  <%= @repo.forks %>
+</p>
+
+<%= link_to 'Edit', edit_repo_path(@repo) %> |
+<%= link_to 'Back', repos_path %>

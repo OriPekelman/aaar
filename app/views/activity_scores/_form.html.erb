@@ -1,0 +1,18 @@
+<%= simple_form_for(@activity_score) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :repo_id %>
+    <%= f.input :year %>
+    <%= f.input :week %>
+    <%= f.input :pulls %>
+    <%= f.input :issues_close %>
+    <%= f.input :issues_comments %>
+    <%= f.input :commits %>
+    <%= f.input :commits_change %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

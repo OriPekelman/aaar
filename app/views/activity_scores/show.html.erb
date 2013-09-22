@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Repo:</strong>
+  <%= @activity_score.repo_id %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @activity_score.year %>
+</p>
+
+<p>
+  <strong>Week:</strong>
+  <%= @activity_score.week %>
+</p>
+
+<p>
+  <strong>Pulls:</strong>
+  <%= @activity_score.pulls %>
+</p>
+
+<p>
+  <strong>Issues close:</strong>
+  <%= @activity_score.issues_close %>
+</p>
+
+<p>
+  <strong>Issues comments:</strong>
+  <%= @activity_score.issues_comments %>
+</p>
+
+<p>
+  <strong>Commits:</strong>
+  <%= @activity_score.commits %>
+</p>
+
+<p>
+  <strong>Commits change:</strong>
+  <%= @activity_score.commits_change %>
+</p>
+
+<%= link_to 'Edit', edit_activity_score_path(@activity_score) %> |
+<%= link_to 'Back', activity_scores_path %>

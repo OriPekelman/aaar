@@ -1,0 +1,24 @@
+<ul class="nav nav-tabs">
+  <% @repos.each do |repo_type, repo| %>
+    <li class="<%= repo_type == :sources ? 'active' : ''%>" ><a href="#<%=repo_type %>" data-toggle="tab"><%=repo_type %></a></li>
+  <% end %>
+</ul>
+<div class="tab-content">
+  <% @repos.each do |repo_type, repo| %>
+  <div class="tab-pane <%= repo_type == :sources ? 'active' : ''%>" id="<%=repo_type %>">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>language</th>
+          <th>description</th>
+          <th>forks_count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= render 'repos/repo_line', repositories: repo %>
+      </tbody>
+    </table>
+  </div>
+  <% end %>
+</div>

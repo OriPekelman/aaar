@@ -1,0 +1,28 @@
+<h3>User</h3>
+<p>User: <%= @user.full_name %></p>
+<p>Email: <%= @user.email if @user.email %></p>
+<p>Roles: <%= @user.roles.join(', ') if @user.roles %></p>
+
+<p>Login <%= @user.login %>
+<p>Avatar_url<%= @user.avatar_url %>
+<p>Gravatar_id<%= @user.gravatar_id %>
+<p>Url <%= @user.url %>
+<p>Name <%= @user.name %>
+<p>Company <%= @user.company %>
+<p>Blog <%= @user.blog %>
+<p>Location <%= @user.location %>
+
+<p>Hireable<%= @user.hireable %>
+<p>Bio <%= @user.bio %>
+<p>Public repos <%= @user.public_repos %>
+<p>Public gists <%= @user.public_gists %>
+<p>Followers  <%= @user.followers %>
+<p>Following  <%= @user.following %>
+<p>Html url<%= @user.html_url %>
+<p>Created at<%= @user.created_at %>
+<p>User type<%= @user.user_type %>
+<p>Total private<%= @user.total_private_repos %>
+<p>Owned private<%= @user.owned_private_repos %>
+<p>Private gists<%= @user.private_gists %>
+<p>Disk usage<%= @user.disk_usage %>
+<p>Collaborators  <%= @user.collaborators %>
