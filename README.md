@@ -1,6 +1,15 @@
 #Aaar!
 ## Adoption Agency for Abandoned Repos
 
+TL;DR
+
+* Put a badge on a github page saying if the repo is maintained or not. 
+* If there is a maintained fork and the original fork is no longer active give a link to the maintained fork.
+* Help maintainers be better ones, with less pressure, allow maintainers to suggest they want someone to take  over.
+* Poneys, Squirrels, Pirates, Babies and very cute cats.
+
+##Rational
+
 This is basically around creating a "foundation style" governenship model for smaller projects, but without the hassle and the politics. Put it in a box, as a service, lightweight, fun, only around decision making and transparency, not the discussions, they will happen somewhere else. Going AAAR is taking a pledge either to maintain or to do whatever is possible to help others maintain a project.
 
 This is both for the casual OS contributor, that released a thing, but finds it hard to get into the move. The company the sponsors a project, then changes priorities. Or for Yehuda Katz and Steve Klabnik that simple have too much on their plate. Transferring maintainership can simply be the proof of the susccess of a project. It can now live on.  So this is about adoption, but also about parent counselling. 
@@ -23,12 +32,19 @@ Basically nothing to see yet. But you can:
 
 First install MongoDB
 
-```git clone ```
+```git clone git@github.com:OriPekelman/aaar.git```
+
 ```cd aaar ```
+
 ```bundle install ```
+
 ```cp config/devise.example.rb config/devise.rb ```
+
 Create a github application, edit config/devise.rb  and put in your credentials
-```rails s``` and visit http://localhost:3000
+
+```rails s``` 
+
+and visit http://localhost:3000
 
 
 ##Specs / Todo
@@ -105,3 +121,18 @@ Two types of badges, codeclimate/travis style + badgy badges (coderwall)
 Basically all of the data is going to come from somewhere else; It would be cool to keep hypermedia links to the original authority of the data.
 
 We need only expose the specifics here: Decisions users made on maintainership.
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'aaaar'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
