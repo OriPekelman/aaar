@@ -48,8 +48,8 @@ and visit http://localhost:3000
 
 
 ##Specs / Todo
-1. Prioritize (Now, what is the MVP for this thing? what are the minimal metrics + minimal action items + Do I start with a Rails thing and refactor to async workers, or from the get go decouple everything, it will make it easier to conribute custom metrics etc..)
-1. Operationnal model / Licensing for AAAR itself (so on MVP we need at least a self referncing badge !) - I would probably want this GPL without copyright assignement
+1. Prioritize (Now, what is the MVP for this thing? what are the minimal metrics + minimal action items + Do I start with a Rails thing and refactor to async workers, or from the get go decouple everything, it will make it easier to contribute custom metrics etc..)
+1. Operationnal model / Licensing for AAAR itself (so on MVP we need at least a self referencing badge !) - I would probably want this GPL without copyright assignement
 1. Privacy, privacy, privacy
 1. Security, security, security
 1. UX, UX, UX
