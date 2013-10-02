@@ -12,9 +12,9 @@ TL;DR
 
 This is basically around creating a "foundation style" governenship model for smaller projects, but without the hassle and the politics. Put it in a box, as a service, lightweight, fun, only around decision making and transparency, not the discussions, they will happen somewhere else. Going AAAR is taking a pledge either to maintain or to do whatever is possible to help others maintain a project.
 
-This is both for the casual OS contributor, that released a thing, but finds it hard to get into the move. The company the sponsors a project, then changes priorities. Or for Yehuda Katz and Steve Klabnik that simple have too much on their plate. Transferring maintainership can simply be the proof of the susccess of a project. It can now live on.  So this is about adoption, but also about parent counselling. 
+This is both for the casual OS contributor, that released a thing, but finds it hard to get into the move. The company that sponsors a project, then changes priorities. Or for Yehuda Katz and Steve Klabnik that simple have too much on their plate. Transferring maintainership can simply be the proof of the susccess of a project. It can now live on.  So this is about adoption, but also about parent counselling. 
 
-But most importantly this is about the end-user, the developer, htat wants to know how well a project is maintained, this takes out some of the steam from the last serious FUD elements againts OS. Just tell me. I might still use it if it is not maintained. I might even choose to maintain it myself. But tell me.
+But most importantly this is about the end-user, the developer, that wants to know how well a project is maintained, this takes out some of the steam from the last serious FUD elements againts OS. Just tell me. I might still use it if it is not maintained. I might even choose to maintain it myself. But tell me.
 
 ## Thoughts 
 
@@ -23,7 +23,7 @@ But most importantly this is about the end-user, the developer, htat wants to kn
  * We will need to talk to the github guys about API usage limits. If ever this takes off we might easily explode the quota.
 * Remember, some (important) repos on github are just mirrors
 * Some people have just so much Karma, that if you decide to go AAAR you also accept they can take over your project, for a time, forever. You can always "opt-out" by just removing the badge. Again this is about a strong signal to the larger community.
-* Forks (real ones) and Merges (real ones) are an important thing. It is time we had again clear semantics on this : This is a fork, that is going to be maintained as such. Might get merged back, or not.
+* Forks (real ones) and Merges (real ones) are an important thing. It is time we had again clear semantics on this: this is a fork, that is going to be maintained as such. Might get merged back, or not.
 * Make this a bit Tamagochi
 
 ##Getting started
@@ -103,8 +103,8 @@ and visit http://localhost:3000
 
 ##Visitor Workers
 
-1. Create time series for every data point : data_point:[{date=>date, value=>value}]
-2. Create score for different dimensions : Activity / Maintainership
+1. Create time series for every data point: `data_point:[{date=>date, value=>value}]`
+2. Create score for different dimensions: Activity / Maintainership
 3. Create notification
 
 ##Badge
@@ -114,7 +114,7 @@ Two types of badges, codeclimate/travis style + badgy badges (coderwall)
 1. Generate images - activity level / maintainership level - We can have multiple badges, generate a single image
 1. Generate link(s) 
   1. to AbandonBadge (This project is no longer maintained, and is seeking a new maintainer / This repo is maintained by a god expect reaction times in the ms domain for pull requests.... etc / This repo needs more co-maintainers, there so much work... )
-  1. to "maintained" repo (the author of the project has transferred maintainership to..  click here for maitained fork)
+  1. to "maintained" repo (the author of the project has transferred maintainership to..  click here for maintained fork)
 
 ##API
 
